@@ -1,0 +1,278 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: center;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+  min-height: 100vh;
+  background: #2f3542;
+  color: #ffffff;
+}
+
+body h1 {
+  margin-bottom: 3rem;
+  text-transform: uppercase;
+  font-size: 3rem;
+}
+
+body h1 span, body h1 i {
+  color: #41ead4;
+}
+
+body h3 {
+  color: #41ead4;
+  font-size: 1.5rem;
+}
+
+body .container .choices {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 3rem auto 3rem;
+  width: 500px;
+}
+
+body .container .choices button {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 45%;
+          flex: 1 0 45%;
+  width: 200px;
+  height: 80px;
+  cursor: pointer;
+  border: none;
+  margin: .4rem;
+  outline: none;
+  background: #dfe4ea;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  font-weight: 600;
+}
+
+body .container .choices button:hover {
+  background: #41ead4;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+body .container .choices button:active {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  -webkit-transition: -webkit-transform .1s;
+  transition: -webkit-transform .1s;
+  transition: transform .1s;
+  transition: transform .1s, -webkit-transform .1s;
+}
+
+body .container .choices button p {
+  font-size: 1.3rem;
+  margin: 0;
+}
+
+body #progress {
+  font-size: 1.3rem;
+  color: #41ead4;
+}
+
+h4 {
+  font-family: helvetica;
+  text-align: center;
+  font-size: 30px;
+}
+
+input[type="text"] {
+  padding: 0.8rem;
+  margin: auto;
+  margin-top: 0.5rem;
+  width: 20rem;
+  display: block;
+  outline: none;
+  border: 1px solid #bdbdbb;
+}
+
+main {
+  height: 10vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+}
+
+.modal {
+  display: none;
+  /* Masqué par défaut */
+  position: fixed;
+  /* Rester dans la place */
+  z-index: 8888;
+  /* S'asseoir en haut */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Largeur complète */
+  height: 100%;
+  /* Hauteur complète */
+  overflow: auto;
+  /* Activer défilement si nécessaire */
+  background-color: black;
+  /* Couleur de plan */
+  background-color: rgba(0, 0, 0, 0.4);
+  /*  w/ opacité noir*/
+}
+
+/* Contenu Modal/Boîte*/
+.modal-content {
+  background-color: #fefefe;
+  margin: 10vh auto;
+  /* 15% d'en haut et centré */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 60%;
+  /* Pouvait être plus ou moins, dépend de la taille de l'écran  */
+}
+
+@media (min-width: 1366px) {
+  .modal-content {
+    background-color: #fefefe;
+    margin: 10vh auto;
+    /* 15% d'en haut et centré */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 30%;
+    /* Pouvait être plus ou moins, dépend de la taille de l'écran */
+  }
+}
+
+h2 {
+  margin: 0 0 20px;
+  font-weight: 400;
+  color: #41ead4;
+}
+
+p {
+  margin: 0 0 20px;
+  font-weight: 400;
+  color: #2f3542;
+}
+
+span {
+  color: #666;
+  display: block;
+  padding: 0 10px 0 10px;
+}
+
+form {
+  padding: 25px;
+  margin: 25px;
+  -webkit-box-shadow: 0 2px 5px #f5f5f5;
+          box-shadow: 0 2px 5px #f5f5f5;
+  background: #eee;
+}
+
+input, textarea {
+  width: calc(100% - 18px);
+  padding: 8px;
+  margin-bottom: 20px;
+  border: 1px solid #41ead4;
+  outline: none;
+}
+
+.contact-form button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background: #41ead4;
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+}
+
+button:hover {
+  background: #ffffff;
+  color: #2f3542;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+/* Le bouton Fermer */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #2f3542;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+button.button {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 45%;
+          flex: 1 0 45%;
+  width: 150px;
+  height: 50px;
+  cursor: pointer;
+  border: none;
+  margin: .4rem;
+  outline: none;
+  background: #dfe4ea;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  font-weight: 600;
+  font-family: helvetica;
+}
+
+button.button:hover {
+  background: #41ead4;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+button.button:active {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  -webkit-transition: -webkit-transform .1s;
+  transition: -webkit-transform .1s;
+  transition: transform .1s;
+  transition: transform .1s, -webkit-transform .1s;
+}
+
+button.button p {
+  font-size: 1.3rem;
+  margin: 0;
+}
+
+button.button:hover {
+  color: #ffffff;
+}
+/*# sourceMappingURL=styleC.css.map */
