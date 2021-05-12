@@ -46,11 +46,11 @@ body .container .choices button {
       -ms-user-select: none;
           user-select: none;
   font-weight: 600;
-  border-style: none;
+  color: #ff5e00;
 }
 
 body .container .choices button:hover {
-  background: #41ead4;
+  background: white;
   -webkit-transition: .5s;
   transition: .5s;
 }
