@@ -15,39 +15,45 @@
             <li><h1>Questionnaire à choix multiples</h1></li>
         </ul>
     </header>
-    <section>    
+    <div class="container">
+        <div id="quiz">
+            <h1><span>Questionnaire de connaissances numériques</span> <i class="far fa-question-circle"></i></h1>
             
-        <h4 id="question"></h4>
+            <section>    
+            
+                <h4 id="question"></h4>
+                
+                <h3 id="score"></h3>
+
+                    <!--questions section-->
+                    <div class="choices">
+                        <button id="guess0" class="btn">        
+                        <p id="choice0"></p>
+                        </button>
+
         
-        <h3 id="score"></h3>
+                        <button id="guess1" class="btn">
+                        <p id="choice1"></p>
+                        </button>
+                        
+                        <button id="guess2" class="btn">
+                        <p id="choice2"></p>
+                        </button>
+                        
+                        <button id="guess3" class="btn">
+                        <p id="choice3"></p>
+                        </button>
+                    </div>
 
-            <!--questions section-->
-            <div class="choices">
-                <button id="guess0" class="btn">        
-                <p id="choice0"></p>
-                </button>
-
-
-                <button id="guess1" class="btn">
-                <p id="choice1"></p>
-                </button>
-                
-                <button id="guess2" class="btn">
-                <p id="choice2"></p>
-                </button>
-                
-                <button id="guess3" class="btn">
-                <p id="choice3"></p>
-                </button>
-            </div>
-
-
-    <p id="progress"></p>
-    </section>        
+        
+            <p id="progress"></p>
+            </section>        
+        </div>
+    </div>
     <footer>
             <ul>
                 <li><h2>Tester vos connaissances !</h2></li>
-                <li><img src="./assets/img/QCM logo.png" class="logo" alt="logo-Q" /></li>
+                <li><img src="./" class="logo" alt="logo-Q" /></li>
             </ul>
     </footer>
 </body>
