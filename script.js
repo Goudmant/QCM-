@@ -92,34 +92,5 @@ class Question {
   
   console.log(quiz);
   
-<style>
-  button {
-    flex: 1 0 45%;
-    width: 200px;
-    height: 80px;
-    cursor: pointer;
-    border-color: #3857ff;
-    margin: .4rem;
-    outline: none;
-    background: #ffffff;
-    user-select: none;
-    font-weight: 600;
 
-    &:hover {
-      background: #41ead4;
-      transition: .5s;
-    }
-    &:active {
-      transform: scale(.9);
-      transition: transform .1s;
-    }
-  
-    p {
-      font-size: 1.3rem;
-      margin: 0;
-    }
-  
-  }
-  
-</style>
  
