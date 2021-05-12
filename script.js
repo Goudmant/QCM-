@@ -1,3 +1,7 @@
+//import { ComponentName } from 'primereact/{componentname}';
+import { Dialog } from 'primereact/dialog';
+import { Accordion,AccordionTab } from 'primereact/accordion';
+
 class Question {
     constructor(text, choices, answer) {
       this.text = text;
